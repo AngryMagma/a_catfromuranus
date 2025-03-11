@@ -3,7 +3,7 @@ from fetch_media import get_user_id, get_recent_media
 from download import download_media
 
 if __name__ == "__main__":
-    api = login('a_catfromuranus', "Anshuman100")
+    api = login('username', "password")
     if not api:
         exit()
 
