@@ -3,11 +3,11 @@ from fetch_media import get_user_id, get_recent_media
 from download import download_media
 
 if __name__ == "__main__":
-    api = login('username', "password")
+    api = login('a_catfromuranus', "Anshuman100")
     if not api:
         exit()
 
-    accounts = {"posts": ["catstagangsta"], "reels": ["kingcattos", "softcatmemes"]}
+    accounts = {"posts": ["catstagangsta", "_thekittyykatt", "kitttenig", "cool_cat_zone"], "reels": ["kingcattos", "softcatmemes", "_thekittyykatt", "kitttenig"]}
 
     all_posts = []
     all_reels = []
@@ -31,3 +31,4 @@ if __name__ == "__main__":
     # Download 2 new posts and 2 new reels (if available).
     download_media(sorted_posts, "jpeg", target_count=2)
     download_media(sorted_reels, "mp4", target_count=2)
+
